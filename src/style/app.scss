@@ -1,0 +1,275 @@
+/* 改变主题色变量 */
+$--color-primary: $primary;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: "~element-ui/lib/theme-chalk/fonts";
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+body {
+  font-size: 14px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  // transition: all 0.3s;
+}
+// *[border]{
+//   border:1px solid #ebeef5;
+// }
+.w {
+  max-width: 1200px;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.mar-sm {
+  margin: 15px;
+}
+.mar-t {
+  margin-top: 20px;
+}
+.mar-t-sm {
+  margin-top: 15px;
+}
+.mar-t-xs {
+  margin-top: 10px;
+}
+.mar-b {
+  margin-bottom: 20px;
+}
+.mar-b-sm {
+  margin-bottom: 15px;
+}
+.mar-b-xs {
+  margin-bottom: 10px;
+}
+.mar-l-sm {
+  margin-left: 15px;
+}
+.mar-r-sm {
+  margin-right: 15px;
+}
+.mar-l-xs {
+  margin-left: 10px;
+}
+.mar-r-xs {
+  margin-right: 10px;
+}
+.no-mar {
+  margin: 0 !important;
+}
+.bor-b {
+  border-bottom: 1px solid #ebeef5;
+}
+.pad {
+  padding: 20px;
+}
+.pad-l-sm{
+  padding-left: 15px;
+}
+.pad-sm {
+  padding: 15px;
+}
+.content {
+  min-height: 200px;
+  background-color: #fff;
+  padding: 15px;
+  // box-shadow: 1px 1px 5px #eee;
+}
+.text-primary {
+  color: $primary;
+}
+.text-danger {
+  color: $danger;
+}
+.text-link {
+  color: $link;
+}
+.section-search {
+  border-bottom: 1px solid #ededed;
+}
+.text-disabled {
+  color: $disabled;
+}
+.text-xs {
+  font-size: 12px;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-right{
+  text-align: right;
+}
+.text-center{
+  text-align: center;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.link{
+  cursor: pointer;
+  &:hover{
+    text-decoration:underline
+  }
+}
+.full-w,.full-width{
+  width: 100%;
+}
+.table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+.table-row {
+  display: table-row;
+}
+.table-cell {
+  display: table-cell;
+  padding: 8px 10px;
+  vertical-align: top;
+}
+.table {
+  &[border],
+  &[border] .table-cell {
+    border: 1px solid #ddd;
+  }
+}
+a[href] {
+  color: $primary;
+}
+.bg-white {
+  background-color: #fff !important;
+}
+.tabs-light {
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  .el-tabs__nav-wrap {
+    padding: 0 20px;
+    &::after {
+      height: 1px;
+    }
+  }
+  .el-tabs__header {
+    margin-bottom: 0;
+  }
+}
+.bor-def,.bor{
+  border:1px solid #ebeef5;
+}
+.bg-def,.bg{
+  background-color: #f5f5f5;
+}
+.inl-bl{
+  display: inline-block;
+}
+.my-table {
+  border: 1px solid #ebeef5;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  th,
+  td {
+    border: 1px solid #ebeef5;
+    padding: 8px 10px;
+    color: #666;
+  }
+  th {
+    color: #999;
+    background-color: #fafafa;
+  }
+  tr:hover {
+    background-color: #f5f7fa;
+  }
+}
+*[hidden] {
+  display: none;
+}
+.no-transition,
+.no-transition * {
+  transition: none;
+}
+.form-flow{
+  min-height: 200px;
+}
+/* custom-tree */
+.custom-tree {
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  .el-tree-node__content {
+    border: 1px solid #ddd;
+    border-bottom: none;
+    min-height: 26px;
+    height: auto;
+  }
+  .custom-tree-node {
+    display: flex;
+    align-items: center;
+  }
+  .custom-tree-label {
+    white-space: nowrap;
+    display: inline-block;
+    min-width: 10em;
+  }
+  .custom-tree-insert {
+    padding: 0 15px;
+    white-space: normal;
+    border-left: 1px solid #ddd;
+    line-height: 26px;
+    min-height: 26px;
+  }
+}
+::selection {
+  background: $primary;
+  color: #fafafa;
+}
+.form-group-field {
+  border-top:1px solid #ececec;
+  color: #999;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  position: relative;
+  label{
+    display: inline-block;
+    line-height: 24px;
+    padding: 0 10px;
+    position: absolute;
+    left: 40px;
+    top: -12px;
+    background-color: #fff;
+    font-size: 12px;
+  }
+}
+.form-item-tips{
+  font-size:12px;
+  color:$disabled;
+  padding-left: 1em;
+}
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.field {
+  padding-left: 1em;
+  border-left: 4px solid $primary;
+  margin-bottom: 20px;
+}
+.log-container {
+  line-height: 24px;
+}
+.opt-desc {
+  font-size: 12px;
+  margin-left: 1em;
+}
+.line{
+  border-bottom: 1px solid $borderColor;
+}
+/* custom-tree  end */
+// reset
+@import './reset.scss'
